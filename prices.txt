@@ -1,0 +1,23 @@
+ Макияж|Нюдовый макияж|services_images/1.jpg|Нежный естественный образ.|3000 ₽
+ Макияж|Вечерний макияж|services_images/2.jpg|Яркий стойкий образ.|3000 ₽
+ Макияж|Свадебный макияж|services_images/3.jpg|Идеальный образ для невесты.|3000 ₽
+ Макияж|Лифтинг-макияж|services_images/4.jpg|Омолаживающий эффект.|3000 ₽
+ Макияж|Экспресс-макияж|services_images/5.jpg|За 30 минут.|2000 ₽
+ Макияж + прическа|Свадебный образ|services_images/6.png|Полный свадебный образ.|6000 ₽
+ Макияж + прическа|Детский образ|services_images/7.png|Выпускной, конкурс, праздник.|2500 ₽
+ Макияж + прическа|Полный образ|services_images/8.jpg|Макияж + любая прическа.|6000 ₽
+ Прически|Прическа|services_images/hair-story/7.jpg|Локоны, голливудская волна, все виды пучков.|от 2500 ₽|services_images/hair-story/1.jpg;services_images/hair-story/2.jpg;services_images/hair-story/3.jpg;services_images/hair-story/4.jpg;services_images/hair-story/5.jpg;services_images/hair-story/6.jpg
+ Прически|Восстановление волос|services_images/hair-restoration/1.jpg|Кератиновое выпрямление, холодное восстановление, тотальная реконструкция.|от 1500 ₽|services_images/hair-restoration/1.jpg;services_images/hair-restoration/2.jpg;services_images/hair-restoration/3.jpg
+ Маникюр|Комби-маникюр + покрытие|services_images/m1.jpg|Однотонное покрытие с укреплением гелем.|1200 ₽
+ Маникюр|Комби-маникюр без покрытия|services_images/m2.jpg|Аккуратная форма и кутикула без покрытия.|800 ₽
+ Маникюр|Снятие покрытия|services_images/m3.jpg|Своё или чужое покрытие, без дальнейших процедур.|300 ₽
+ Маникюр|Японский маникюр|services_images/m4.jpg|Уход и полировка натуральной пластины.|1000 ₽
+ Маникюр|Моделирование|services_images/m5.jpg|Форма до чёткого квадрата.|500 ₽
+ Маникюр|Наращивание (1 ноготь)|services_images/m6.jpg|Наращивание одного ногтя.|100 ₽
+ Маникюр|Ремонт (1 ноготь)|services_images/m7.jpg|Ремонт одного повреждённого ногтя.|50 ₽
+ Маникюр|Французский маникюр|services_images/m8.jpg|Классический френч на 10 ногтей.|300 ₽
+ Маникюр|Декор|services_images/m9.jpg|Кошка, втирка, стразы, фигурки, наклейки, рисунки — на выбор.|50–300 ₽
+ Обучение|Визажист с нуля|services_images/9.jpg|Полный базовый курс.|55000 ₽|services_images/story/1.png;services_images/story/2.png;services_images/story/3.png;services_images/story/4.png;services_images/story/5.png;services_images/story/6.png|https://teletype.in/@shermua/bazacourse
+ Обучение|Повышение|services_images/10.jpg|Для действующих визажистов.|15000 ₽
+ Обучение|Сам себе визажист|services_images/11.jpg|Курс 1 день.|6000 ₽
+ Обучение|Сам себе визажист PRO|services_images/12.jpg|Курс 2 дня.|8500 ₽
