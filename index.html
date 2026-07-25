@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Эшерс — искусство быть собой</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -245,6 +246,8 @@
                             <option value="makeup">💄 Макияж</option>
                             <option value="full">👑 Макияж + прическа</option>
                             <option value="hair">💇 Прически</option>
+                            <option value="manicure">💅 Маникюр</option>
+                            <option value="brows">✨ Брови</option>
                             <option value="training">📚 Обучение</option>
                         </select>
                         <select id="serviceSelect">
@@ -725,8 +728,10 @@
         const servicesMap = {
             makeup: ['Нюдовый макияж', 'Вечерний макияж', 'Свадебный макияж', 'Лифтинг-макияж', 'Экспресс-макияж'],
             full: ['Свадебный образ', 'Детский образ', 'Полный образ'],
-            hair: ['Прическа'],
-            training: ['Курс по прическам', 'Визажист с нуля', 'Повышение', 'Сам себе визажист', 'Сам себе визажист PRO']
+            hair: ['Прическа', 'Восстановление волос'],
+            manicure: ['Комби-маникюр + покрытие', 'Комби-маникюр без покрытия', 'Снятие покрытия', 'Японский маникюр', 'Моделирование', 'Наращивание (1 ноготь)', 'Ремонт (1 ноготь)', 'Французский маникюр', 'Декор'],
+            brows: ['Коррекция бровей', 'Коррекция + окрашивание', 'Коррекция + ламинирование', 'Коррекция + окрашивание + ламинирование', 'Ламинирование + окрашивание ресниц', 'Комплекс: ресницы + коррекция/окрашивание бровей', 'Комплекс: ресницы + коррекция/ламинирование бровей', 'Комплекс: ресницы + коррекция/окрашивание/ламинирование бровей'],
+            training: ['Визажист с нуля', 'Повышение', 'Сам себе визажист', 'Сам себе визажист PRO']
         };
 
         categorySelect.addEventListener('change', function() {
