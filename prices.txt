@@ -7,7 +7,7 @@
  Макияж + прическа|Детский образ|services_images/7.PNG|Выпускной, конкурс, праздник.|2500 ₽
  Макияж + прическа|Полный образ|services_images/8.JPG|Макияж + любая прическа.|6000 ₽
  Прически|Прическа|services_images/hair-story/7.JPG|Локоны, голливудская волна, все виды пучков.|от 2500 ₽|services_images/hair-story/1.JPG;services_images/hair-story/2.JPG;services_images/hair-story/3.JPG;services_images/hair-story/4.JPG;services_images/hair-story/5.JPG;services_images/hair-story/6.JPG
- Прически|Восстановление волос|services_images/hair-restoration/1.jpg|Кератиновое выпрямление, холодное восстановление, тотальная реконструкция.|от 1500 ₽|services_images/hair-restoration/1.jpg;services_images/hair-restoration/2.jpg;services_images/hair-restoration/3.jpg
+ Волосы|Восстановление волос|services_images/hair-restoration/1.jpg|Кератиновое выпрямление, холодное восстановление, тотальная реконструкция.|от 1500 ₽|services_images/hair-restoration/1.jpg;services_images/hair-restoration/2.jpg;services_images/hair-restoration/3.jpg
  Маникюр|Комби-маникюр + покрытие|services_images/m1.JPG|Однотонное покрытие с укреплением гелем.|1200 ₽
  Маникюр|Комби-маникюр без покрытия|services_images/m2.JPG|Аккуратная форма и кутикула без покрытия.|800 ₽
  Маникюр|Снятие покрытия|services_images/m3.JPG|Своё или чужое покрытие, без дальнейших процедур.|300 ₽
