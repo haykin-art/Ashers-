@@ -378,6 +378,7 @@ section {
     overflow: hidden;
     transition: .4s;
     box-shadow: 0 15px 45px rgba(0, 0, 0, .05);
+    cursor: pointer;
 }
 .service:hover {
     transform: translateY(-10px);
@@ -610,6 +611,27 @@ section {
     border-radius: 28px;
     box-shadow: 0 30px 70px rgba(0, 0, 0, .07);
 }
+.booking-selected-note {
+    font-size: 14px;
+    font-weight: 700;
+    color: #b78d61;
+    background: #f2ede7;
+    padding: 12px 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.booking-selected-note:empty {
+    display: none;
+}
+.yclients-placeholder {
+    border: 1px dashed #d8cfc3;
+    border-radius: 20px;
+    padding: 50px 30px;
+    text-align: center;
+    color: #999;
+    font-size: 15px;
+    line-height: 1.6;
+}
 .booking input,
 .booking select,
 .booking textarea {
@@ -722,6 +744,75 @@ footer {
 .footer div:last-child {
     opacity: .6;
     font-size: 15px;
+}
+.footer-legal {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer-legal a {
+    color: rgba(255, 255, 255, .6);
+    font-size: 14px;
+    text-decoration: none;
+    transition: .3s;
+}
+.footer-legal a:hover {
+    color: #c5a47d;
+}
+/* ===========================
+   COOKIE BANNER
+=========================== */
+.cookie-banner {
+    display: none;
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9998;
+    background: #1f1f1f;
+    color: #fff;
+    border-radius: 20px;
+    padding: 24px 28px;
+    max-width: 620px;
+    margin: 0 auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .3);
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+.cookie-banner.visible {
+    display: flex;
+}
+.cookie-banner p {
+    flex: 1;
+    min-width: 220px;
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: .85;
+    margin: 0;
+}
+.cookie-banner a {
+    color: #c5a47d;
+    text-decoration: underline;
+}
+.cookie-banner .btn {
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 14px 28px;
+}
+@media (max-width: 560px) {
+    .cookie-banner {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .cookie-banner .btn {
+        width: 100%;
+    }
 }
 /* ===========================
    ANIMATION
@@ -967,13 +1058,176 @@ footer {
     letter-spacing: 2px;
 }
 /* ===========================
+   SERVICE MODAL (быстрый просмотр карточки услуги)
+=========================== */
+.service-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .75);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.service-modal-inner {
+    position: relative;
+    background: #fff;
+    width: min(760px, 100%);
+    max-height: 88vh;
+    border-radius: 28px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, .35);
+}
+.service-modal-image {
+    background: #f2ede7;
+    min-height: 320px;
+}
+.service-modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.service-modal-content {
+    padding: 45px 40px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.service-modal-category {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #c5a47d;
+    margin-bottom: 10px;
+}
+.service-modal-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    line-height: 1.1;
+}
+.service-modal-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+.service-modal-review {
+    background: #f8f6f3;
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 18px;
+}
+.service-modal-review:empty {
+    display: none;
+}
+.service-modal-content strong {
+    font-size: 26px;
+    color: #1a1a1a;
+    margin-bottom: 22px;
+    display: block;
+}
+.service-modal-content .btn {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.service-modal-close {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    font-size: 34px;
+    color: #999;
+    cursor: pointer;
+    transition: .3s;
+    font-family: 'Cormorant Garamond', serif;
+    z-index: 3;
+    line-height: 1;
+}
+.service-modal-close:hover {
+    color: #1a1a1a;
+    transform: rotate(90deg);
+}
+.service-modal-prev,
+.service-modal-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 34px;
+    color: #fff;
+    background: rgba(0, 0, 0, .35);
+    cursor: pointer;
+    transition: .3s;
+    padding: 14px 10px;
+    user-select: none;
+    font-family: 'Cormorant Garamond', serif;
+    z-index: 10000;
+    border-radius: 10px;
+}
+.service-modal-prev {
+    left: -60px;
+}
+.service-modal-next {
+    right: -60px;
+}
+.service-modal-prev:hover,
+.service-modal-next:hover {
+    background: rgba(0, 0, 0, .6);
+}
+.service-modal-counter {
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, .75);
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+@media (max-width: 760px) {
+    .service-modal-inner {
+        grid-template-columns: 1fr;
+        max-height: 92vh;
+        overflow-y: auto;
+    }
+    .service-modal-image {
+        min-height: 220px;
+    }
+    .service-modal-prev {
+        left: 6px;
+    }
+    .service-modal-next {
+        right: 6px;
+    }
+    .service-modal-prev,
+    .service-modal-next {
+        top: 130px;
+        font-size: 24px;
+        padding: 10px 6px;
+    }
+    .service-modal-counter {
+        bottom: -26px;
+    }
+}
+/* ===========================
    STORY MODAL (сторис курса "Визажист с нуля")
 =========================== */
-.service-story {
+.service-photo-trigger {
     cursor: pointer;
     position: relative;
 }
-.service-story::before {
+.service-photo-trigger::before {
     content: "Смотреть фото ▸";
     position: absolute;
     top: 16px;
